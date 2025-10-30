@@ -1,0 +1,50 @@
+footer.footer
+  .container
+    .row
+      .col-sm-6
+        nav.footer-nav
+          ul.nav-footer
+            li
+              a(href="#", title="GIỚI THIỆU") GIỚI THIỆU
+              ul.sub-menu
+                +menu('#', 'Thương hiệu', '')
+                +menu('#', 'Nhà máy', '')
+                +menu('#', 'Showroom', '')
+            li
+              a(href="#", title="TIỆN ÍCH") TIỆN ÍCH
+              ul.sub-menu
+                +menu('#', 'Tìm nơi mua hàng', '')
+                +menu('#', 'Nhận mã khuyến mãi', '')
+                +menu('#', 'Phiếu quà tặng', '')
+            li
+              a(href="#", title="TÀI KHOẢN") TÀI KHOẢN
+              ul.sub-menu
+                +menu('#', 'Tài khoản của tôi', '')
+                +menu('#', 'Lịch sử mua hàng', '')
+                +menu('#', 'Danh sách yêu thích', '')
+      .col-sm-6
+        nav.footer-social
+          ul.nav-social
+            +social('#', 'youtube', 'youtube')
+            +social('#', 'facebook', 'facebook')
+            +social('#', 'instagram', 'instagram')
+            +social('#', 'twitter', 'twitter')
+            +social('#', 'pinterest', 'pinterest')
+        .footer-newsletter
+          form(action="index.html")
+            input.newsletter-control(type="text", name="newsletter", placeholder="Để lại tin nhắn bạn muốn gửi đến Fitis")
+            button.newsletter-submit Submit
+
+    .footer-group
+      .footer-certify
+        img(src="assets/images/data/certify-160x48.png", width="160", height="48", alt="")
+      nav.footer-utility
+        ul.nav-utility
+          +menu('#', 'Chính sách bảo mật', '')
+          +menu('#', 'Quy định và điều kiện', '')
+          +menu('#', 'Chính sách đổi trả', '')
+          +menu('#', 'Sơ đồ trang', '')
+    .footer-info
+      h5 Bản quyền của Công ty TNHH MTV FITIS |  Fitis - Good Housemates © 2017.
+      p Địa chỉ: 29-29A Huỳnh Văn Bánh, Phường 17, Quận Phú Nhuận, TP. Hồ Chí Minh. Giấy chứng nhận Đăng kí kinh doanh 0312730890 do Sở kế hoạch & Đầu tư Tp Hồ Chí Minh cấp ngày 08/04/2014.
+

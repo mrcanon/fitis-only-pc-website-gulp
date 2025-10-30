@@ -1,0 +1,24 @@
+include mixin
+header.header
+  .header-top
+    .container
+      ul.nav-top
+        li
+          a.icon-phone(href="tel:0909147247", title="0909 147 247") 0909 147 247
+        li
+          a.icon-cart(href="#", title="Giỏ hàng") Giỏ hàng <span class="card-number">(2)</span>
+        +menu-link('#', 'Tài khoản', 'icon-user')
+        +menu-link('#', 'Tìm kiếm', 'icon-search')
+  .header-bottom
+    .container
+      a.header-logo(href="#", title="Fitis")
+        img(src="assets/images/logo.png", width="200", height="90", alt="Logo fitis")
+      .header-nav
+        ul.nav-main
+          +menu('/product-list.html', 'SẢN PHẨM', '')
+          +menu('#', 'GIỚI THIỆU FITIS', '')
+          +menu('#', 'ĐỊA ĐIỂM MUA HÀNG', '')
+          +menu('#', 'BLOG', '')
+          +menu('#', 'HỖ TRỢ', '')
+          +menu('#', 'LIÊN HỆ', '')
+

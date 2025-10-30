@@ -1,0 +1,97 @@
+extends layouts/full-width.jade
+block head
+  +head(
+  'Homepage | Fitis',
+  'description',
+  'keywords',
+  'description_social',
+  'image_social',
+  'url_social',
+  'type_social'
+  )
+block css
+  = "\n"
+  | <!--build:css assets/css/owl.carousel.min.css-->
+  | <link rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css">
+  = "\n"
+  | <!-- endbuild -->
+  = "\n"
+block feature
+  .panel-slider.owl-carousel(data-carousel='{"items": 1, "loop": true, "center": false, "margin": 0, "autoWidth": false, "rtl": false, "autoHeight": false, "autoplay": true, "autoplayTimeout": 5000, "nav": false, "dots": true}')
+    +slider-item('assets/images/data/slider-1280x654.jpg', '#', 'COMPACT<span>X</span>', 'lớn hơn, tận dụng không gian tối đa.')
+    +slider-item('assets/images/data/slider-1280x654.jpg', '#', 'COMPACT<span>X</span>', 'lớn hơn, tận dụng không gian tối đa.')
+    +slider-item('assets/images/data/slider-1280x654.jpg', '#', 'COMPACT<span>X</span>', 'lớn hơn, tận dụng không gian tối đa.')
+    +slider-item('assets/images/data/slider-1280x654.jpg', '#', 'COMPACT<span>X</span>', 'lớn hơn, tận dụng không gian tối đa.')
+    +slider-item('assets/images/data/slider-1280x654.jpg', '#', 'COMPACT<span>X</span>', 'lớn hơn, tận dụng không gian tối đa.')
+  .panel-focus
+    .container
+      .row
+        .col-sm-5
+          .focus-media.table(data-mh="focus")
+            .table-cell
+              img(src="assets/images/data/focus-183x77.png", width="183", height="77", alt="")
+        .col-sm-7
+          .focus-content(data-mh="focus")
+            h3.focus-heading Make every day more rewarding.
+            p.focus-summary Join Fitis Rewards™ to earn Gold level benefits like free shipping, get free accessories, get discount upto 50%
+            .focus-handle
+              a(href="#", title="ĐĂNG KÝ NGAY") ĐĂNG KÝ NGAY
+              a(href="#", title="ĐĂNG NHẬP") ĐĂNG NHẬP
+  .panel-feature
+    .row
+      +feature-item('#', '', 'assets/images/data/feature-425x225-1.jpg')
+      +feature-item('#', '', 'assets/images/data/feature-425x225-2.jpg')
+      +feature-item('#', '', 'assets/images/data/feature-425x225-3.jpg')
+  .panel-seller
+    .container
+      h2.seller-heading OUR BESTSELLERS
+      .seller-carousel
+        .owl-carousel(data-carousel='{"items": 1, "loop": true, "center": false, "margin": 0, "autoWidth": false, "rtl": false, "autoHeight": false, "autoplay": true, "autoplayTimeout": 5000, "nav": true, "dots": false}')
+          +seller-item('assets/images/data/slider-270x221.jpg', '#', 'Thùng rác Dual Đen', 'sản phẩm được lựa chọn nhiều nhất tại Vinhomes.')
+          +seller-item('assets/images/data/slider-270x221.jpg', '#', 'Thùng rác Dual Đen', 'sản phẩm được lựa chọn nhiều nhất tại Vinhomes.')
+          +seller-item('assets/images/data/slider-270x221.jpg', '#', 'Thùng rác Dual Đen', 'sản phẩm được lựa chọn nhiều nhất tại Vinhomes.')
+  .panel-testimonial
+    .container
+      .owl-carousel(data-carousel='{"items": 1, "loop": true, "center": false, "margin": 0, "autoWidth": false, "rtl": false, "autoHeight": false, "autoplay": true, "autoplayTimeout": 5000, "nav": false, "dots": true}')
+        .testimonial-group
+          +testimonial-item('assets/images/data/testimonial-174x174-1.jpg', 'Ca sỹ Lam Trường', '“Tôi cảm thấy khá bất ngờ vì không nghĩ rằng Fitis là sản phẩm do Việt Nam sản xuất.”')
+          +testimonial-item('assets/images/data/testimonial-174x174-2.jpg', 'Diva Mỹ Linh', '“Đơn giản mà tinh tế. Đó là những gì mà Mỹ Linh nghĩ thùng rác Fitis có được.”')
+          +testimonial-item('assets/images/data/testimonial-174x174-3.jpg', 'NTK Đỗ Mạnh Cường', '“Chào mừng những chiếc thùng rác mang dáng vấp của sự tinh tế và hiện đại.”')
+          +testimonial-item('assets/images/data/testimonial-174x174-4.jpg', 'MC Phan Anh', '“Tôi khá hài lòng với độ hoàn thiện đến từng chi tiết nhỏ của sản phẩm này.”')
+        .testimonial-group
+          +testimonial-item('assets/images/data/testimonial-174x174-1.jpg', 'Ca sỹ Lam Trường', '“Tôi cảm thấy khá bất ngờ vì không nghĩ rằng Fitis là sản phẩm do Việt Nam sản xuất.”')
+          +testimonial-item('assets/images/data/testimonial-174x174-2.jpg', 'Diva Mỹ Linh', '“Đơn giản mà tinh tế. Đó là những gì mà Mỹ Linh nghĩ thùng rác Fitis có được.”')
+          +testimonial-item('assets/images/data/testimonial-174x174-3.jpg', 'NTK Đỗ Mạnh Cường', '“Chào mừng những chiếc thùng rác mang dáng vấp của sự tinh tế và hiện đại.”')
+          +testimonial-item('assets/images/data/testimonial-174x174-4.jpg', 'MC Phan Anh', '“Tôi khá hài lòng với độ hoàn thiện đến từng chi tiết nhỏ của sản phẩm này.”')
+        .testimonial-group
+          +testimonial-item('assets/images/data/testimonial-174x174-1.jpg', 'Ca sỹ Lam Trường', '“Tôi cảm thấy khá bất ngờ vì không nghĩ rằng Fitis là sản phẩm do Việt Nam sản xuất.”')
+          +testimonial-item('assets/images/data/testimonial-174x174-2.jpg', 'Diva Mỹ Linh', '“Đơn giản mà tinh tế. Đó là những gì mà Mỹ Linh nghĩ thùng rác Fitis có được.”')
+          +testimonial-item('assets/images/data/testimonial-174x174-3.jpg', 'NTK Đỗ Mạnh Cường', '“Chào mừng những chiếc thùng rác mang dáng vấp của sự tinh tế và hiện đại.”')
+          +testimonial-item('assets/images/data/testimonial-174x174-4.jpg', 'MC Phan Anh', '“Tôi khá hài lòng với độ hoàn thiện đến từng chi tiết nhỏ của sản phẩm này.”')
+        .testimonial-group
+          +testimonial-item('assets/images/data/testimonial-174x174-1.jpg', 'Ca sỹ Lam Trường', '“Tôi cảm thấy khá bất ngờ vì không nghĩ rằng Fitis là sản phẩm do Việt Nam sản xuất.”')
+          +testimonial-item('assets/images/data/testimonial-174x174-2.jpg', 'Diva Mỹ Linh', '“Đơn giản mà tinh tế. Đó là những gì mà Mỹ Linh nghĩ thùng rác Fitis có được.”')
+          +testimonial-item('assets/images/data/testimonial-174x174-3.jpg', 'NTK Đỗ Mạnh Cường', '“Chào mừng những chiếc thùng rác mang dáng vấp của sự tinh tế và hiện đại.”')
+          +testimonial-item('assets/images/data/testimonial-174x174-4.jpg', 'MC Phan Anh', '“Tôi khá hài lòng với độ hoàn thiện đến từng chi tiết nhỏ của sản phẩm này.”')
+        .testimonial-group
+          +testimonial-item('assets/images/data/testimonial-174x174-1.jpg', 'Ca sỹ Lam Trường', '“Tôi cảm thấy khá bất ngờ vì không nghĩ rằng Fitis là sản phẩm do Việt Nam sản xuất.”')
+          +testimonial-item('assets/images/data/testimonial-174x174-2.jpg', 'Diva Mỹ Linh', '“Đơn giản mà tinh tế. Đó là những gì mà Mỹ Linh nghĩ thùng rác Fitis có được.”')
+          +testimonial-item('assets/images/data/testimonial-174x174-3.jpg', 'NTK Đỗ Mạnh Cường', '“Chào mừng những chiếc thùng rác mang dáng vấp của sự tinh tế và hiện đại.”')
+          +testimonial-item('assets/images/data/testimonial-174x174-4.jpg', 'MC Phan Anh', '“Tôi khá hài lòng với độ hoàn thiện đến từng chi tiết nhỏ của sản phẩm này.”')
+  .panel-partner
+    .container
+      h2.partner-heading OUR PARTNERS
+      .owl-carousel(data-carousel='{"items": 1, "loop": true, "center": false, "margin": 2, "autoWidth": false, "rtl": false, "autoHeight": false, "autoplay": true, "autoplayTimeout": 5000, "nav": false, "dots": true, "responsive": {"0" : {"items": 2, "loop": true}, "479" : {"items": 3, "loop": true}, "768" : {"items": 4, "loop": true}, "992" : {"items": 6, "loop": true}}}')
+        +partner-item('#', '', 'assets/images/data/partner-1.jpg', 137, 32)
+        +partner-item('#', '', 'assets/images/data/partner-2.jpg', 112, 40)
+        +partner-item('#', '', 'assets/images/data/partner-3.jpg', 108, 49)
+        +partner-item('#', '', 'assets/images/data/partner-4.jpg', 107, 76)
+        +partner-item('#', '', 'assets/images/data/partner-5.jpg', 127, 61)
+        +partner-item('#', '', 'assets/images/data/partner-6.jpg', 145, 35)
+block content
+
+block script
+  | <!--build:js assets/js/vendor/owl.carousel.min.js-->
+  | <script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+  | <!-- endbuild -->
+  = '\n'

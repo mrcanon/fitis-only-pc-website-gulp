@@ -1,0 +1,29 @@
+.panel-block
+  h2.block-heading SẢN PHẨM CỦA FITIS
+  ul.nav-category
+    li.current-menu-item
+      a(href="", title="") THÙNG RÁC
+      ul
+        +menu('#', 'Premium', 'current-menu-item')
+        +menu('#', 'Dual', '')
+        +menu('#', 'Compact', '')
+        +menu('#', 'Premium (Gold Edition)', '')
+    +menu('#', 'LAUNDRY BIN <span>(sắp ra mắt)</span>', '')
+    +menu('#', 'PHỤ KIỆN', '')
+.panel-block
+  h2.block-heading BỘ LỌC SẢN PHẨM
+  .block-group
+    h3.block-title MÀU SẮC
+    ul.nav-colors
+      +menu-link('#', 'Màu ghi', 'color-1')
+      +menu-link('#', 'Màu đỏ', 'color-2')
+      +menu-link('#', 'Màu trắng', 'color-3')
+      +menu-link('#', 'Màu đen', 'color-4')
+      +menu-link('#', 'Màu xanh lá cây', 'color-5')
+      +menu-link('#', 'Màu vàng', 'color-6')
+      +menu-link('#', 'Màu nâu đất', 'color-7')
+  .block-group
+    h3.block-title CHẤT LIỆU
+    ul.nav-material
+      +menu-link('#', 'Inox', '')
+      +menu-link('#', 'Nhựa', '')

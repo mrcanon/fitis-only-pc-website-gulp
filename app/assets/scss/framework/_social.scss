@@ -1,0 +1,97 @@
+.nav-social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    color: $nav-social-link-color;
+    display: block;
+    font-size: $nav-social-font-size;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: background .3s ease-in-out, color .3s ease-in-out;
+
+    &:hover {
+      color: $nav-social-link-hover-color;
+      text-decoration: none;
+    }
+  }
+
+  .fa {
+    font-size: $nav-social-font-size-icon;
+    vertical-align: middle;
+  }
+}
+
+.nav-social-left,
+.nav-social-right {
+
+  li {
+    float: left;
+
+    &:not(:first-child) {
+      margin-left: $nav-social-space;
+    }
+  }
+}
+
+.nav-social-left {
+  float: left;
+}
+
+.nav-social-right {
+  float: right;
+}
+
+.nav-social-center {
+  font-size: 0;
+  text-align: center;
+
+  li {
+    margin-left: $nav-social-space / 2;
+    margin-right: $nav-social-space / 2;
+  }
+}
+
+.nav-social-primary {
+
+  a {
+    color: $nav-social-primary-link-color;
+  }
+
+  .fa {
+    margin-right: $nav-social-space / 2;
+  }
+}
+
+.nav-social-second {
+
+  a {
+    background: $nav-social-second-bacground;
+    color: $nav-social-second-link-color;
+
+    &:hover {
+      background: $nav-social-second-hover-bacground;
+      color: $nav-social-second-link-hover-color;
+    }
+  }
+}
+
+.nav-social-circle {
+
+  a {
+    @include border-radius(50%);
+    @include square(24px);
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .fa {
+    font-size: $nav-social-circle-font-size;
+  }
+}

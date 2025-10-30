@@ -1,0 +1,32 @@
+extends layouts/left-sidebar
+block head
+  +head(
+  'Product List | Fitis',
+  'description',
+  'keywords',
+  'description_social',
+  'image_social',
+  'url_social',
+  'type_social'
+  )
+block feature
+  .panel-breadcrumb
+    .container
+      ul
+        +menu('#', 'TRANG CHỦ', '')
+        +menu('#', 'SẢN PHẨM', '')
+        +menu('#', 'PREMIUM', '')
+block content
+  .panel-product
+    .row
+      +product-item('assets/images/data/product-173x142-1.jpg', 173, 142, '/product-overview.html', 'Thùng rác sơn tĩnh điện nhân, tròn, 12L - Trắng', '790.000đ')
+      +product-item('assets/images/data/product-173x142-2.jpg', 173, 142, '/product-overview.html', 'Thùng rác sơn tĩnh điện nhân, tròn, 12L - Trắng', '790.000đ')
+      +product-item('assets/images/data/product-173x230-1.jpg', 173, 230, '/product-overview.html', 'Thùng rác sơn tĩnh điện nhân, tròn, 12L - Trắng', '790.000đ')
+      +product-item('assets/images/data/product-173x142-3.jpg', 173, 142, '/product-overview.html', 'Thùng rác sơn tĩnh điện nhân, tròn, 12L - Trắng', '790.000đ')
+      +product-item('assets/images/data/product-173x230-2.jpg', 173, 230, '/product-overview.html', 'Thùng rác sơn tĩnh điện nhân, tròn, 12L - Trắng', '790.000đ')
+      +product-item('assets/images/data/product-173x142-4.jpg', 173, 142, '/product-overview.html', 'Thùng rác sơn tĩnh điện nhân, tròn, 12L - Trắng', '790.000đ')
+      +product-item('assets/images/data/product-173x142-1.jpg', 173, 142, '/product-overview.html', 'Thùng rác sơn tĩnh điện nhân, tròn, 12L - Trắng', '790.000đ')
+      +product-item('assets/images/data/product-173x142-2.jpg', 173, 142, '/product-overview.html', 'Thùng rác sơn tĩnh điện nhân, tròn, 12L - Trắng', '790.000đ')
+      +product-item('assets/images/data/product-173x230-1.jpg', 173, 230, '/product-overview.html', 'Thùng rác sơn tĩnh điện nhân, tròn, 12L - Trắng', '790.000đ')
+    .product-loadmore
+      a(href="#", title="Xem thêm 50 sản phẩm") Xem thêm 50 sản phẩm

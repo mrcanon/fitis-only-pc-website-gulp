@@ -1,0 +1,32 @@
+.header {
+  //background: $color-white;
+  box-shadow: 0 1px 6px rgba(#000, .09);
+  position: relative;
+  z-index: 99;
+}
+
+.header-top {
+  background: $color-primary;
+}
+
+.header-bottom {
+  padding-top: 20px;
+  padding-bottom: 18px;
+}
+
+.header-nav {
+  float: right;
+  max-width: calc(100% - 100px);
+  margin-top: 12px;
+
+  .nav-main {
+    float: right;
+  }
+}
+
+.header-logo {
+  float: left;
+  width: 100px;
+  display: inline-block;
+  margin-left: 23px;
+}

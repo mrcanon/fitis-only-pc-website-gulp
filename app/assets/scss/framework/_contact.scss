@@ -1,0 +1,97 @@
+.title-main {
+  font-size: 62px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.title-desc {
+  font-size: 20px;
+  margin: 30px auto;
+  max-width: 400px;
+}
+
+.map-coyote {
+  height: 100%;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.map1-title {
+  color: $color-title-map;
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.map1-content {
+  list-style: none;
+  padding-left: 0;
+}
+
+.map1-item {
+  color: $color-text;
+  font-size: 12px;
+  line-height: 17px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  position: relative;
+
+  i {
+    font-size: 14px;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.map-full {
+  position: relative;
+}
+
+.map-bglayer {
+  background: rgba($color-second, .8);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.map3-content {
+  color: $color-white;
+  font-size: 20px;
+  padding-top: 210px;
+}
+
+.map3-text {
+  margin-bottom: 60px;
+}
+
+.map3-social {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 0;
+
+  .social-item {
+    display: inline-block;
+
+    a {
+      background: $color-white;
+      border-radius: 50%;
+      color: $color-second;
+      display: block;
+      font-size: 16px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      width: 30px;
+    }
+  }
+}
+
+
+

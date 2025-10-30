@@ -1,0 +1,27 @@
+extends layouts/left-sidebar
+block head
+  +head(
+  'Product overview | Fitis',
+  'description',
+  'keywords',
+  'description_social',
+  'image_social',
+  'url_social',
+  'type_social'
+  )
+block feature
+  .panel-breadcrumb
+    .container
+      ul
+        +menu('#', 'TRANG CHỦ', '')
+        +menu('#', 'SẢN PHẨM', '')
+        +menu('#', 'PREMIUM', '')
+block sidebar
+
+block content
+  .panel-category
+    .row
+      +category-item('assets/images/data/category-244x309.jpg', 244, 309, '#', 'Dòng Premium', 'thiết kế đơn giản, chất liệu cao cấp<br>nhiều tính năng nổi bật.')
+      +category-item('assets/images/data/category-310x162.jpg', 310, 162, '#', 'Dòng Dual', 'cơ cấu hai lớp giúp che túi rác<br>màu sắc đa dạng')
+      +category-item('assets/images/data/category-240x174.jpg', 240, 174, '#', 'Dòng Compact', 'thiết kế gọn gàng<br>chất liệu nhựa PP an toàn sức khoẻ')
+      +category-item('assets/images/data/category-260x186.jpg', 260, 186, '#', 'Premium (Gold Edition)', 'khác biệt, sang trọng hơn<br>mang sản phẩm lên tầm cao mới')

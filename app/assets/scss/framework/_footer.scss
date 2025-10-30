@@ -1,0 +1,265 @@
+.footer {
+  background: $color-primary;
+  border-top: 1px solid $color-black;
+  padding-top: 71px;
+  padding-bottom: 10px;
+}
+
+.footer-nav {
+
+}
+
+.nav-footer {
+  margin: 0 -10px;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    float: left;
+    width: percentage(1/3);
+    padding-left: 10px;
+    padding-right: 10px;
+
+    > a {
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 10px 0 0;
+    list-style: none;
+
+    li {
+      padding-top: 11px;
+      padding-bottom: 5px;
+    }
+
+    a {
+      font-size: 16px;
+    }
+  }
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+      color: $color-second;
+    }
+  }
+}
+
+.nav-utility {
+  font-size: 0;
+  list-style: none;
+  margin: 0 0 0 145px;
+  padding: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    font-size: 16px;
+
+    &:not(:first-child) {
+      margin-left: 13px;
+      padding-left: 14px;
+      position: relative;
+
+      &::before {
+        background: #ededed;
+        content: '';
+        display: block;
+        height: 14px;
+        left: 0;
+        margin-top: -7px;
+        position: absolute;
+        top: 50%;
+        width: 1px;
+      }
+    }
+  }
+
+  a {
+    color: #ededed;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-second;
+    }
+  }
+}
+
+.footer-social {
+  @include clearfix;
+  margin-bottom: 44px;
+}
+
+.nav-social {
+  font-size: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  float: right;
+
+  li {
+    float: left;
+    display: inline-block;
+
+    &:not(:first-child) {
+      margin-left: 54px;
+    }
+  }
+
+  a {
+    font-size: $base-font-size;
+    text-indent: -9090px;
+    display: block;
+
+    &:hover {
+      color: $nav-social-link-hover-color;
+      text-decoration: none;
+    }
+  }
+
+  .youtube {
+
+    a {
+      @include size(78px, 40px);
+      @include sprite(0 -24px);
+
+      &:hover {
+        background-position: 0 -176px;
+      }
+    }
+  }
+
+  .facebook {
+
+    a {
+      @include size(36px, 40px);
+      @include sprite(-80px -24px);
+
+      &:hover {
+        background-position: -80px -176px;
+      }
+    }
+  }
+
+  .instagram {
+
+    a {
+      @include size(36px, 40px);
+      @include sprite(-120px -24px);
+
+      &:hover {
+        background-position: -120px -176px;
+      }
+    }
+  }
+
+  .twitter {
+
+    a {
+      @include size(43px, 40px);
+      @include sprite(-160px -24px);
+
+      &:hover {
+        background-position: -160px -176px;
+      }
+    }
+  }
+
+  .pinterest {
+
+    a {
+      @include size(43px, 40px);
+      @include sprite(0 -64px);
+
+      &:hover {
+        background-position: 0 -104px;
+      }
+    }
+  }
+}
+
+.footer-utility {
+  margin-top: 42px;
+}
+
+.footer-newsletter {
+  padding-right: 70px;
+  position: relative;
+}
+
+.newsletter-control {
+  border: 1px solid #b5b5b5;
+  background: $color-white;
+  display: block;
+  font-size: 20px;
+  height: 50px; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  line-height: $base-line-height;
+  padding: $padding-base-vertical 25px;
+  width: 100%;
+  outline: none;
+  border-radius: 20px;
+  max-width: 470px;
+  float: right;
+}
+
+.newsletter-submit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-indent: -9090px;
+  outline: none;
+  border: 0;
+  @include sprite(-48px -64px);
+  width: 60px;
+  height: 50px;
+  padding: 0;
+}
+
+.footer-group {
+  @include clearfix;
+  margin-top: 59px;
+  margin-bottom: 10px;
+}
+
+.footer-certify {
+  float: right;
+}
+
+.footer-info {
+  color: #838383;
+  font-size: 14px;
+  border-top: 1px solid #a2a2a2;
+  padding-top: 4px;
+
+  a {
+    color: #ededed;
+  }
+
+  h5 {
+    font-size: 15px;
+    color: #ededed;
+    font-weight: 400;
+    margin-bottom: 6px;
+  }
+}
+
+@include breakpoint(lg) {
+  .nav-social {
+
+    li {
+
+      &:not(:first-child) {
+        margin-left: 70px;
+      }
+    }
+  }
+}

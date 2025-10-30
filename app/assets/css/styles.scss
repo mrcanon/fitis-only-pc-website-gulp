@@ -1,0 +1,77 @@
+/*!
+ * Coyote Framework
+ * Copyright 2017 Codeshore, Co-Well Asia
+ * Licensed under MIT
+ */
+
+// Core variables and mixins
+@import 'framework/variables';
+@import 'framework/mixins';
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+1. Reset
+2. Print
+3. Typography
+4. Grid
+5. Button
+6. Header
+7. Navigation
+8. Social
+98. Print
+99. Helpers
+
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[1. Reset]
+*/
+@import 'framework/normalize';
+
+/*------------------------------------------------------------------
+[2. Font icon]
+*/
+@import 'framework/glyphicons';
+
+/*------------------------------------------------------------------
+[3. Typography]
+*/
+@import 'framework/scaffolding';
+@import 'framework/type';
+@import 'framework/code';
+@import 'framework/forms';
+
+/*------------------------------------------------------------------
+[4. Grid]
+*/
+@import 'framework/grid';
+
+/*------------------------------------------------------------------
+[5. Button]
+*/
+@import 'framework/buttons';
+
+/*------------------------------------------------------------------
+[6. Header]
+*/
+@import 'framework/header';
+
+/*------------------------------------------------------------------
+[7. Navigation
+*/
+@import 'framework/nav-menu';
+
+/*------------------------------------------------------------------
+[8. Social]
+*/
+@import 'framework/social';
+
+/*------------------------------------------------------------------
+[98. Print]
+*/
+@import 'framework/print';
+
+/*------------------------------------------------------------------
+[99. Helpers]
+*/
+@import 'framework/helpers';
